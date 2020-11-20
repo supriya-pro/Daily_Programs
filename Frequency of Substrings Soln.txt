@@ -1,0 +1,9 @@
+#Frequency of substrings 
+s=input().strip()
+n=int(input())
+res=[s[i:i+n] for i in range(len(s)-n+1)]
+q=[] 
+for i in res:
+    if i not  in q:
+        print(i,res.count(i))
+        q+=[i]#q.append(i)
