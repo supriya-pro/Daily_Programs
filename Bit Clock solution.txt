@@ -1,0 +1,8 @@
+#Bit Clock 
+n=int(input())
+for i in range(24):
+    for j in range(60):
+        x,y=bin(i)[2:],bin(j)[2:] 
+        if x.count('1')+y.count('1')==n:
+            print(str(i).zfill(2)+":"+str(j).zfill(2))
+            
