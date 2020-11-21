@@ -1,0 +1,13 @@
+#Sort by Uppercase Count
+n=int(input())
+l=[]
+for i in range(n):
+    s=input().strip()
+    c=0 
+    for i in s:
+        if i.isupper():
+            c+=1 
+    l.append([s,c])
+l=sorted(l,key=lambda x:-x[1])
+for i in l:
+    print(i[0])

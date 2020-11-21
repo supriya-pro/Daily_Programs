@@ -1,0 +1,42 @@
+Sort by Upper Case Count
+
+ The program must accept N string values containing only alphabets as the input. The program must sort the given string values in descending order based on the number of upper case alphabets. If two or more string values have the same number of upper case alphabets, then the program must sort those string values in the order of their occurrence. Finally, the program must print the N sorted string values as the output.
+
+ Boundary Condition(s): 2 <= N <= 50 1 <= Length of each string <= 100 
+
+Input Format: 
+The first line contains N. The next N lines, each contains a string value. 
+Output Format: 
+The first N lines, each contains a string value after sorting based on the given conditions. Example Input/Output 1: 
+
+Input: 3 
+APple 
+BaSkeT 
+sKaTeBoArD 
+
+Output:
+ sKaTeBoArD 
+BaSkeT 
+APple
+
+ Explanation:
+ The number of upper case alphabets in APple is 2. The number of upper case alphabets in BaSkeT is 3. The number of upper case alphabets in sKaTeBoArD is 5. After sorting the string values in descending order based on the number of upper case alphabets, the string values become sKaTeBoArD BaSkeT APple 
+
+Example Input/Output 2:
+
+ Input: 
+6 
+cANDLe
+ DOG 
+penCIL 
+BooK 
+PLASTIc 
+game 
+
+Output: 
+PLASTIc 
+cANDLe 
+DOG 
+penCIL 
+BooK 
+game
