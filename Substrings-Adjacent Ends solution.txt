@@ -1,0 +1,13 @@
+#Substrings - Adjacent Ends
+s=input().strip().lower()
+count=0
+for ind1 in range(0,len(s)-1):
+    for ind2 in range(ind1+1,len(s)):
+        #generating the substrings
+        #s[ind1:ind2+1]
+        if (s[ind1]=='a' and s[ind2]=='z') or(s[ind1]=='z' and s[ind2]=='a'):
+            count+=1
+        elif abs(ord(s[ind1])-ord(s[ind2]))==1:
+            count+=1
+print(count)
+
