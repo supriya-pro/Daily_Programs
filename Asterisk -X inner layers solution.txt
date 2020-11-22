@@ -1,0 +1,13 @@
+#Asterisks - Inner Layers
+n=int(input())
+m=[input().split() for i in range(n)]
+x=int(input())
+start=(n//2)-x+n%2
+end=n-start
+for i in range(start,end):
+for j in range(start,end):
+       m[i][j]='*'
+for i in range(n):
+for j in range(n):
+       print(m[i][j],end=" ")
+   print() 

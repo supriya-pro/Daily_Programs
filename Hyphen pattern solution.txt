@@ -1,0 +1,10 @@
+#Increament and decreament hypens
+n=int(input())
+co=["0"];s=n
+print("-"*n+"0")
+for i in range(n-1,-1,-1):
+print(i*"-",end="")
+co.insert(0,str(s))
+co.insert(len(co),str(s))
+print("".join(co))
+s-=1
