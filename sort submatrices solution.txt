@@ -1,0 +1,19 @@
+#Sort Submatrices
+r,c=map(int,input().split())
+m=[list(map(int,input().split())) for i in range(r)]
+k=[]
+for i in range(0,r,2):
+    for j in range(0,c,2):
+        k.append([m[i][j],m[i][j+1],m[i+1][j],m[i+1][j+1]])
+k=sorted(k,key=lambda i:i[0])
+l=0
+for i in range(0,r,2):
+    for j in range(0,c,2):
+        m[i][j]=k[l][0]
+        m[i][j+1]=k[l][1]
+        m[i+1][j]=k[l][2]
+        m[i+1][j+1]=k[l][3]
+        l+=1
+for i in m:
+    print(*i)
+
