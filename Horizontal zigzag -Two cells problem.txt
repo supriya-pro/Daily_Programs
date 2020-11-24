@@ -1,0 +1,55 @@
+Horizontal Zig-Zag - Two Cells
+
+The program must accept a character matrix of size RxC and the positions of two cells C1 (X1, Y1), C2 (X2, Y2) as the input.
+The program must print the characters from the cell C1 to the cell C2 in horizontal zig-zag direction. The horizontal zig-zag
+traversal from the cell C1 to the cell C2 is explained below.
+- The traversal always begins from the cell C1 and it moves towards the left in the same row K.
+- Then it moves from left to right in the next row K+1.
+- Then it moves from right to left in the next row K+2.
+- Similarly, it moves in horizontal zig-zag direction until it reaches the cell C2.
+Boundary Condition(s):
+2 <= R, C <= 50
+1 <= X1, X2 <= R
+1 <= Y1, Y2 <= C
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines, each contains C characters separated by a space.
+The (R+2) line contains two integers representing the position of the cell C1 separated by a space.
+The (R+3) line contains two integers representing the position of the cell C2 separated by a space.
+Output Format:
+The first line contains the characters from the cell C1 to the cell C2 in horizontal zig-zag direction.
+Example Input/Output 1:
+Input:
+8 5
+x 9 D l c
+0 k F m 6
+E q n 9 z
+w d B k w
+l n 1 B C
+q 7 r G m
+F p w 5 m
+s 6 l w 0
+3 4
+6 3
+Output:
+9nqEwdBkwCB1nlq7r
+Explanation:
+In the given 8x5 character matrix, the characters from the cell (3, 4) to the cell (6, 3) in horizontal zig-zag direction are
+highlighted below.
+x 9 D l c
+0 k F m 6
+E q n 9 z
+w d B k w
+l n 1 B C
+q 7 r G m
+F p w 5 m
+s 6 l w 0
+So 9nqEwdBkwCB1nlq7r is printed as the output.
+Example Input/Output 2:
+Input:
+6 6
+q 2 p v x z
+B r t E f c
+6 0 9 v i d
+j A j E D D
+6 E c u E d
