@@ -1,0 +1,19 @@
+COUNT OF COMMON CHARACTERS IN TWO STRINGS
+
+Two string values S1 and S2 are passed as input. The program must print the count of common characters in strings S1 and S2. Assume the alphabets in S1 and S2 will be in lower case.
+
+Example 1:
+
+Input:
+china
+india
+Output:
+3
+
+Example 2:
+
+Input:
+energy
+every
+Output:
+3

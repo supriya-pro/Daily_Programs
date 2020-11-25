@@ -1,0 +1,28 @@
+#most fav one
+#smaller matrix search
+n=int(input())
+m=int(input())
+a=[list(map(int,input().split())) for i in range(n)]
+b=[list(map(int,input().split())) for i in range(m)]
+d=0 
+for i in range(n):
+    for j in range(n):
+        if a[i][j]==b[0][0]:
+            if i+m<=n and j+m<=n:
+                c=0 
+                for p in range(i,i+m):
+                    for q in range(j,j+m):
+                        if a[p][q]!=b[p-i][q-i]:
+                            c=1 
+                            break 
+                    if c:
+                        break 
+                else:
+                    print("TRUE")
+                    d=1 
+        if d:
+            break 
+    if d:
+        break 
+else:
+    print("FALSE")

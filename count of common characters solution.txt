@@ -1,0 +1,9 @@
+#common characters in two strings
+s1=input().strip()
+s2=input().strip()
+count=0
+for i in s1:
+    if i in s2:
+        count+=1 
+        s2=s2.replace(i,'',1)
+print(count)
