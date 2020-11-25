@@ -1,0 +1,37 @@
+String Values Vertically
+The program must accept N string values as the input. The program must print the first character of all N string values. Then
+the program must print the second character of all N string values. Then the program must print the third character of all N
+string values. Similarly, the program must print the remaining characters of all N string values as the output.
+Boundary Condition(s):
+2 <= N <= 100
+1 <= Length of each string <= 1000
+Input Format:
+The first line contains N.
+The next N lines, each contains a string value.
+Output Format:
+The first line contains a string value containing the characters of N string values based on the given conditions.
+Example Input/Output 1:
+Input:
+4
+skill
+Robot
+boy
+TALL
+Output:
+sRbTkooAibyLloLlt
+Explanation:
+The given 4 strings are skill, Robot, boy and TALL.
+The first character of the 4 string values are s, R, b and T.
+The second character of the 4 string values are k, o, o and A.
+Similarly, the remaining characters are printed.
+So sRbTkooAibyLloLlt is printed as the output.
+Example Input/Output 2:
+Input:
+5
+cookie
+Noodles
+bag
+PENCIL
+Candle
+Output:
+cNbPCooaEaoogNnkdCdilIleeLes

@@ -1,0 +1,12 @@
+#String values -Vertically
+n=int(input());k=[]
+maxi=0
+for i in range(n):
+    s=input().strip()
+    k.append(s)
+    if len(s)>maxi:
+        maxi=len(s)
+for i in range(maxi):
+    for val in k:
+        if i<len(val):
+            print(val[i],end="")
