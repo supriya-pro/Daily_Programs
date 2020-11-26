@@ -1,0 +1,23 @@
+#Concatenate Remove & Interlace
+s1=input().strip()
+s2=input().strip()
+ch=input().strip()
+if ch=='+':
+    print(s1+s2)
+elif ch=='-':
+    s2=list(s2)
+    flag=False
+    for i in s1:
+        if i in s2:
+            s2.remove(i)
+        else:
+            print(i,end="")
+            Flag=True
+    if flag==False:
+        print(-1)
+else:
+    for i in range(max(len(s1),len(s2))):
+        if i<len(s1):
+            print(s1[i],end="")
+        if i<len(s2):
+            print(s2[i],end="")

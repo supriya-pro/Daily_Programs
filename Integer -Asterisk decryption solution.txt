@@ -1,0 +1,11 @@
+#Integer-Asterisks Decryption
+t=""
+s=input().strip()
+while s:
+    if len(s)>=3 and s[2]=='*':
+        t+=chr(ord('a')+int(s[:2]))
+        s=s[3:] 
+    else:
+        t+=chr(ord('a')+int(s[0]))
+        s=s[1:] 
+print(t)
