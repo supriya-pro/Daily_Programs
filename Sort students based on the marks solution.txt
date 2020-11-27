@@ -1,0 +1,10 @@
+# student marks
+n = int(input())
+stud = []
+for i in range(n):
+    name, math, phy, chem = input().split()
+    math, phy, chem = int(math), int(phy), int(chem)
+    stud.append([name, math, phy, chem])
+stud.sort(key=lambda x: (-x[1], -x[2], -x[3], x[0]))
+for s in stud:
+    print(*s) 

@@ -1,0 +1,17 @@
+#shift even integers-K times
+n,k=map(int,input().split())
+l=list(map(int,input().split()))
+li=[]
+for i in l:
+    if(i%2==0):
+        li.append(i) 
+for i in range(k):
+    s=[];g=0
+    li=li[1:]+str(li[0])
+    for j in range(len(l)):
+        if(l[j]%2==0):
+            print(li[g],end=" ")
+            g+=1
+        else:
+            print(l[j],end=" ")
+    print()
