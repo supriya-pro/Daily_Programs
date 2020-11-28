@@ -1,0 +1,9 @@
+
+#unique powers of two
+s=input().strip()
+uni=[]
+for i in range(0,s.count("0")+1):
+    f="1"+i*"0"
+    if f in s:
+        uni.append(int(f,2))
+print(*sorted(set(uni)))
