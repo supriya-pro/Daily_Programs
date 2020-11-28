@@ -1,0 +1,18 @@
+#zig zag string to matrix
+s=input().strip()
+r,c=map(int,input().split())
+m=[["*"]*c for i in range(r)]
+k=0
+for i in range(r):
+    if i%2==0:
+        for j in range(c):
+            if k<len(s):
+                m[i][j]=s[k]
+                k+=1
+    else:
+        for j in range(c-1,-1,-1):
+            if k<len(s):
+                m[i][j]=s[k]
+                k+=1
+for i in k:
+    print("".join(i))

@@ -1,0 +1,46 @@
+Zig-Zag String to Matrix
+The program must accept a string S and two integers R, C as the input. The program must form a matrix of size RxC. Then the
+program must fill the matrix with the characters of S in horizontal zig-zag direction. If some cells in the matrix are not filled in,
+the program must fill those cells with asterisks.
+Boundary Condition(s):
+1 <= Length of S <= 10^4
+2 <= R, C <= 100
+Input Format:
+The first line contains S.
+The second line contains R and C separated by a space.
+Output Format:
+The first R lines, each contains C characters.
+Example Input/Output 1:
+Input:
+environmentcareneeded
+4 6
+Output:
+enviro
+ctnemn
+arenee
+***ded
+Explanation:
+Here S = environmentcareneeded, R = 4 and C = 6.
+The number of rows in the matrix must be 4.
+The number of columns in the matrix must be 6.
+After filling the matrix with the characters of S in horizontal zig-zag direction, the matrix becomes
+enviro
+ctnemn
+arenee
+***ded
+Example Input/Output 2:
+Input:
+fullstack
+3 5
+Output:
+fulls
+*kcat
+*****
+Example Input/Output 3:
+Input:
+Encyclopedia
+3 3
+Output:
+Enc
+lcy
+ope
