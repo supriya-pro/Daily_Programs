@@ -1,0 +1,14 @@
+#shift encryption
+s=input().strip()
+x=int(input())
+y=int(input())
+for i in s:
+    if(i.isalpha()):
+        if((ord(i)+x)>ord('z')):
+            print(chr(ord('a')+ord('z')-ord(i)+(x-1)),end="")
+        else:
+            print(chr(ord(i)+x),end="")
+    elif(i.isdigit()):
+        print(int(i)+y,end="")
+    else:
+        print(i,end="")

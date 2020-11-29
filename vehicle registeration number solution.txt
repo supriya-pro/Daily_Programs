@@ -1,0 +1,18 @@
+#vehicle registeration number
+a,b=input().split("-")
+b=int(b)
+n=int(input())
+b+=n 
+if(b>9999):
+    b-=9999
+    if(len(a)==2):
+        if(a[1]=="Z"):
+            a=chr(ord(a[0])+1)+"A" 
+        else:
+            a=a[0]+chr(ord(a[1])+1)
+    else:
+        if(a=="Z"):
+            a="AA"
+        else:
+            a=chr(ord(a)+1)
+print(a+"-"+str(b).zfill(4))
