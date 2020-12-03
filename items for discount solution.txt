@@ -1,0 +1,9 @@
+#item discount
+n=int(input());min=999999
+for i in range(n):
+    l=list(map(str,input().split()))
+    savings=(int(l[1])//100)*int(l[2]))
+    if(savings<min):
+        min=savings
+        s=l[0]
+print(s)

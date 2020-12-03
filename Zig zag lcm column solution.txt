@@ -1,0 +1,10 @@
+#zig zag lcm column
+import math # orfrom fractions import gcd || from math import gcd 
+def findlcm(num1,num2):
+    return (num1*num2)//math.gcd(num1,num2)
+r,c=map(int,input().split())
+m=[list(map(int,input().split())) for i in range(r)]
+x,y=map(int,input().split())
+for i in range(r):
+    print(findlcm(m[i][x-1],m[r-i-1][y-1]),end=" ")
+    
