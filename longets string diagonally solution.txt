@@ -1,0 +1,51 @@
+r,c=map(int,input().split())
+l=[input().split() for i in range(r)]
+x,y=map(int,input().split())
+x-=1
+y-=1
+maxi=0
+st=""
+row=x
+col=y
+while row>=0 and col>=0:
+ st+=l[row][col]
+ row-=1
+ col-=1
+le=len(st)
+if le>maxi:
+    maxi=le
+    str=st
+row=x
+col=y
+st=""
+while row>=0 and col<c:
+    st+=l[row][col]
+    row-=1
+    col+=1
+le=len(st)
+if le>maxi:
+    maxi=le
+    str=st
+row=x
+col=y
+st=""
+while row<r and col<c:
+    st+=l[row][col]
+    row+=1
+    col+=1
+le=len(st)
+if le>maxi:
+    maxi=le
+    str=st
+st=""
+row=x
+col=y
+while row<r and col>=0:
+    st+=l[row][col]
+    row+=1
+    col-=1
+le=len(st)
+if le>maxi:
+    maxi=le
+    str=st
+print(str)

@@ -1,0 +1,212 @@
+Longest String - Diagonally
+The program must accept a character matrix of size RxC and the position of a cell (X, Y) as the input. The program must form
+four string values based on the following conditions.
+- The string S1 must be formed by traversing the cells from the given cell diagonally in the top-left direction.
+- The string S2 must be formed by traversing the cells from the given cell diagonally in the top-right direction.
+- The string S3 must be formed by traversing the cells from the given cell diagonally in the bottom-rightdirection.
+- The string S4 must be formed by traversing the cells from the given cell diagonally in the bottom-leftdirection.
+Finally, the program must print the longest string among the four string values as the output. If two or more string values have
+the same maximum length, the program must print the first occurring string as the output.
+Boundary Condition(s):
+2 <= R, C <= 50
+1 <= X <= R
+Output Format:
+The first line contains the longest string among the four string values.
+Example Input/Output 1:
+Input:
+6 8
+D y j w h r y t
+s a r A v g t y
+l E b v m B y F
+F p z w E j n s
+m f p D j d r y
+D v w r s e m D
+4 5
+Output:
+Evry
+Explanation:
+The position of the given cell is (4, 5).
+S1 = Evry.
+S2 = EBtt.
+S3 = Edm.
+S4 = EDw.
+There are two string values having the same maximum length Evry and EBtt.
+The string Evry is the first occurring string. So it is printed as the output.
+Example Input/Output 2:
+Input:
+10 7
+E x e k e B h
+e c j D b y e
+j b l b t b d
+h h C C h s d
+D q j h d s d
+n z s k D n h
+l p i x k E D
+b e a n b d v
+b y d j y d d
+t r y F u n u
+8 2
+Output:
+eikdsdLongest String - Diagonally
+The program must accept a character matrix of size RxC and the position of a cell (X, Y) as the input. The program must form
+four string values based on the following conditions.
+- The string S1 must be formed by traversing the cells from the given cell diagonally in the top-left direction.
+- The string S2 must be formed by traversing the cells from the given cell diagonally in the top-right direction.
+- The string S3 must be formed by traversing the cells from the given cell diagonally in the bottom-rightdirection.
+- The string S4 must be formed by traversing the cells from the given cell diagonally in the bottom-leftdirection.
+Finally, the program must print the longest string among the four string values as the output. If two or more string values have
+the same maximum length, the program must print the first occurring string as the output.
+Boundary Condition(s):
+2 <= R, C <= 50
+1 <= X <= R
+1 <= Y <= C
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines, each contains C characters separated by a space.
+The (R+2) line contains X and Y separated by a space.
+Output Format:
+The first line contains the longest string among the four string values.
+Example Input/Output 1:
+Input:
+6 8
+D y j w h r y t
+s a r A v g t y
+l E b v m B y F
+F p z w E j n s
+m f p D j d r y
+D v w r s e m D
+4 5
+Output:
+Evry
+Explanation:
+The position of the given cell is (4, 5).
+S1 = Evry.
+S2 = EBtt.
+S3 = Edm.
+S4 = EDw.
+There are two string values having the same maximum length Evry and EBtt.
+The string Evry is the first occurring string. So it is printed as the output.
+Example Input/Output 2:
+Input:
+10 7
+E x e k e B h
+e c j D b y e
+j b l b t b d
+h h C C h s d
+D q j h d s d
+n z s k D n h
+l p i x k E D
+b e a n b d v
+b y d j y d d
+t r y F u n u
+8 2
+Output:
+eikdsdLongest String - Diagonally
+The program must accept a character matrix of size RxC and the position of a cell (X, Y) as the input. The program must form
+four string values based on the following conditions.
+- The string S1 must be formed by traversing the cells from the given cell diagonally in the top-left direction.
+- The string S2 must be formed by traversing the cells from the given cell diagonally in the top-right direction.
+- The string S3 must be formed by traversing the cells from the given cell diagonally in the bottom-rightdirection.
+- The string S4 must be formed by traversing the cells from the given cell diagonally in the bottom-leftdirection.
+Finally, the program must print the longest string among the four string values as the output. If two or more string values have
+the same maximum length, the program must print the first occurring string as the output.
+Boundary Condition(s):
+2 <= R, C <= 50
+1 <= X <= R
+1 <= Y <= C
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines, each contains C characters separated by a space.
+The (R+2) line contains X and Y separated by a space.
+Output Format:
+The first line contains the longest string among the four string values.
+Example Input/Output 1:
+Input:
+6 8
+D y j w h r y t
+s a r A v g t y
+l E b v m B y F
+F p z w E j n s
+m f p D j d r y
+D v w r s e m D
+4 5
+Output:
+Evry
+Explanation:
+The position of the given cell is (4, 5).
+S1 = Evry.
+S2 = EBtt.
+S3 = Edm.
+S4 = EDw.
+There are two string values having the same maximum length Evry and EBtt.
+The string Evry is the first occurring string. So it is printed as the output.
+Example Input/Output 2:
+Input:
+10 7
+E x e k e B h
+e c j D b y e
+j b l b t b d
+h h C C h s d
+D q j h d s d
+n z s k D n h
+l p i x k E D
+b e a n b d v
+b y d j y d d
+t r y F u n u
+8 2
+Output:
+eikdsdLongest String - Diagonally
+The program must accept a character matrix of size RxC and the position of a cell (X, Y) as the input. The program must form
+four string values based on the following conditions.
+- The string S1 must be formed by traversing the cells from the given cell diagonally in the top-left direction.
+- The string S2 must be formed by traversing the cells from the given cell diagonally in the top-right direction.
+- The string S3 must be formed by traversing the cells from the given cell diagonally in the bottom-rightdirection.
+- The string S4 must be formed by traversing the cells from the given cell diagonally in the bottom-leftdirection.
+Finally, the program must print the longest string among the four string values as the output. If two or more string values have
+the same maximum length, the program must print the first occurring string as the output.
+Boundary Condition(s):
+2 <= R, C <= 50
+1 <= X <= R
+1 <= Y <= C
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines, each contains C characters separated by a space.
+The (R+2) line contains X and Y separated by a space.
+Output Format:
+The first line contains the longest string among the four string values.
+Example Input/Output 1:
+Input:
+6 8
+D y j w h r y t
+s a r A v g t y
+l E b v m B y F
+F p z w E j n s
+m f p D j d r y
+D v w r s e m D
+4 5
+Output:
+Evry
+Explanation:
+The position of the given cell is (4, 5).
+S1 = Evry.
+S2 = EBtt.
+S3 = Edm.
+S4 = EDw.
+There are two string values having the same maximum length Evry and EBtt.
+The string Evry is the first occurring string. So it is printed as the output.
+Example Input/Output 2:
+Input:
+10 7
+E x e k e B h
+e c j D b y e
+j b l b t b d
+h h C C h s d
+D q j h d s d
+n z s k D n h
+l p i x k E D
+b e a n b d v
+b y d j y d d
+t r y F u n u
+8 2
+Output:
+eikdsd
