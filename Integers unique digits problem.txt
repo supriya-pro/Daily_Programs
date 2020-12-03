@@ -1,0 +1,49 @@
+Integers - Unique Digits
+The program must accept an array of N integers as the input. The program must print the integer(s) in a single line until no
+digit is repeated throughout the integers. In the same way, the program must print the integers of the given array in remaining
+lines as the output. If there is no such integer, the program must print -1 as the output.
+Boundary Condition(s):
+1 <= N <= 100
+1 <= Each integer value <= 10^5
+Input Format:
+The first line contains N.
+The second line contains N integers separated by a space.
+Output Format:
+The line(s), each containing the integer value(s) separated by a space.
+Example Input/Output 1:
+Input:
+7
+12 5 98 54 71 44 123
+Output:
+12 5 98
+54 71
+123
+Explanation:
+The given 7 integers are 12, 5, 98, 54, 71, 44 and 123.
+In the first 3 integers, the digits have not occurred more than once.
+[12, 5, 98]
+In the next two integers, the digits have not occurred more than once.
+[54, 71]
+In the 6 integer 44, the digit 4 has repeated. So it is not printed.
+In the last integer, the digits have not occurred more than once.
+[123]
+Hence the output is
+12 5 98
+54 71
+123
+Example Input/Output 2:
+Input:
+10
+28 57 49 89 81 91 60 46 66 77
+Output:
+28 57 49
+89
+81
+91 60
+46
+Example Input/Output 3:
+Input:
+4
+202 115 66 4124
+Output:
+-1

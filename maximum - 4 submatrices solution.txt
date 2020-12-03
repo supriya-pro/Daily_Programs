@@ -1,0 +1,22 @@
+#Maximum - four submatrices
+r,c=map(int,input().split())
+m=[list(map(int,input().split())) for i in range(r)]
+x,y=map(int,input().split())
+x-=1;y-=1
+tl=[];tr=[];bl=[];br=[]
+for i in range(x):
+    for j in range(y):
+        tl.append(m[i][j])
+print(max(tl),end=" ")
+for i in range(x):
+    for j in range(y+1,c):
+        tr.append(m[i][j])
+print(max(tr),end=" ")
+for i in range(x+1,r):
+    for j in range(y):
+        bl.append(m[i][j])
+print(max(bl),end=" ")
+for i in range(x+1,r):
+    for j in range(y+1,c):
+        br.append(m[i][j])
+print(max(br),end=" ")
