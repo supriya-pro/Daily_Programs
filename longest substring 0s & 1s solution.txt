@@ -1,0 +1,17 @@
+#Longest Substring -  Equals 0s and 1s
+s=input().strip()
+ma=0;maxstr=""
+for i in range(len(s)-1):
+    for j in range(i+1,len(s)):
+        a=s[i:j+1]
+        if a.count('1')==a.count('0'):
+            b=a.count('1')
+            s1=a[:len(a)//2];s2=a[len(a)//2:]
+            if s1.count('1')==b or s2.count('1')==b:
+                if len(a)>ma:
+                    ma=len(a)
+                    maxstr=a
+if maxstr:
+    print(maxstr)
+else:
+    print(-1)
