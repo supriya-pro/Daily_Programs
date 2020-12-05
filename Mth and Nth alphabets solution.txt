@@ -1,0 +1,13 @@
+
+#Mth & Nth Alphabets.
+m,n,k=map(int,input().split())
+a=[chr(i) for i in range(97,123)]
+for i in range(1,k+1):
+    if i%2==1:
+        ind=(m-1)%len(a)#rotating in a cyclic fashion.
+        print(a[ind],end="")
+        a.pop(ind)
+    else:
+        ind=(n-1)%len(a)
+        print(a[ind],end="")
+        a.pop(ind)
