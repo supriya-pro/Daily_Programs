@@ -1,0 +1,41 @@
+Sort Engines - Performance
+The program must accept the speed and the efficiency of N engines as the input. The program must sort the engines based on
+the performance in descending order. The performance of an engine is equal to the product of its speed and efficiency. If two or
+more engines have the same performance, then sort those engines based on the speed in descending order. Finally, the
+program must print the speed and efficiency of the N engines after sorting.
+Boundary Condition(s):
+2 <= N <= 100
+1 <= Speed, Efficiency <= 1000
+Input Format:
+The first line contains N.
+The second line contains N integers representing the speed of the N engines.
+The third line contains N integers representing the efficiency of the N engines.
+Output Format:
+The first line contains N integers representing the speed of the N engines after sorting.
+The second line contains N integers representing the efficiency of the N engines after sorting.
+Example Input/Output 1:
+Input:
+5
+1 7 2 9 3
+7 5 5 8 1
+Output:
+9 7 2 1 3
+8 5 5 7 1
+Explanation:
+The performance of the 1 engine is 7 (1 * 7).
+The performance of the 2 engine is 35 (7 * 5).
+The performance of the 3 engine is 10 (2 * 5).
+The performance of the 4 engine is 72 (9 * 8).
+The performance of the 5 engine is 3 (3 * 1).
+So the engines are sorted in descending order based on the performance.
+Hence the output is
+9 7 2 1 3
+8 5 5 7 1
+Example Input/Output 2:
+Input:
+8
+5 3 8 2 3 4 3 6
+2 4 9 6 8 7 8 2
+Output:
+8 4 3 3 6 3 2 5
+9 7 8 8 2 4 6 2

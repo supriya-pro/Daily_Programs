@@ -1,0 +1,14 @@
+#sort engines-performance
+n=int(input())
+s=list(map(int,input().split()))
+e=list(map(int,input().split()))
+k=[]
+for i in range(n):
+    k.append([s[i],e[i],s[i]*e[i]])
+k=sorted(k,key=lambda x:(-x[2],-x[0]))
+for i in k:
+    print(i[0],end=" ")
+print()
+for i in k:
+    print(i[1],end=" ")
+

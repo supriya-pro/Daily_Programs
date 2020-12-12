@@ -1,0 +1,22 @@
+Replace characters - four directions.
+The program must accept a RXC character matrix as the input of the program.
+=>if the character is T ,replace all the characters above the T character with *, and it should not replace 
+the characters TBRL.
+=>if the character is R , replace all the characters right to the characters with *, except TRLB.
+=>if the character is L,replace all the characters left to the characters with *,except TRLB
+=>if the character is B,replace all the character bottom to the characters with *,except TRLB.
+and finally print the modified matrix as the output.
+
+Example 
+I/p:
+3 3 
+A B C 
+R K L 
+T L M
+
+OUTPUT:
+* B C
+R * L
+T L M
+
+
